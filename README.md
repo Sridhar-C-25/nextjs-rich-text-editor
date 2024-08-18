@@ -1,4 +1,4 @@
-![localhost_3000_ (7)](https://github.com/user-attachments/assets/b6d53ea0-6262-454d-b647-116acd2d52d4)
+![localhost_3000_ (8)](https://github.com/user-attachments/assets/b82f20cd-16bf-4da0-a2fd-c68e25d24849)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

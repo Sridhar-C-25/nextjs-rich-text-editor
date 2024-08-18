@@ -1,4 +1,5 @@
 "use client";
+import { List } from "lucide-react";
 import { Toggle } from "../ui/toggle";
 import {
   Heading1,
@@ -14,6 +15,7 @@ import {
   Highlighter,
   Upload,
 } from "lucide-react";
+import { ListOrdered } from "lucide-react";
 
 export default function ToolBar({ editor }) {
   if (!editor) return null;
@@ -69,6 +71,16 @@ export default function ToolBar({ editor }) {
       icon: <AlignRight className="size-4" />,
       onClick: () => editor.chain().focus().setTextAlign("right").run(),
       preesed: editor.isActive({ textAlign: "right" }),
+    },
+    {
+      icon: <List className="size-4" />,
+      onClick: () => editor.chain().focus().toggleBulletList().run(),
+      preesed: editor.isActive("bulletList"),
+    },
+    {
+      icon: <ListOrdered className="size-4" />,
+      onClick: () => editor.chain().focus().toggleOrderedList().run(),
+      preesed: editor.isActive("orderedList"),
     },
     {
       icon: <Code className="size-4" />,
